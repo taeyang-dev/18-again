@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_BASE_URL = '/api'
+const API_BASE_URL = 'https://one8-again-backend.onrender.com/api'
 
 const client = axios.create({
   baseURL: API_BASE_URL,

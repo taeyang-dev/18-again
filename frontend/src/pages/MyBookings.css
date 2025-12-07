@@ -1,0 +1,163 @@
+.my-bookings {
+  width: 100%;
+}
+
+.my-bookings h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.no-bookings {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-bookings p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.browse-activities-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #10b981;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.browse-activities-button:hover {
+  background: #047857;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.booking-activity-info {
+  flex: 1;
+}
+
+.booking-activity-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.booking-activity-info h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.booking-activity-info h3 a:hover {
+  color: #10b981;
+  text-decoration: underline;
+}
+
+.booking-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.booking-location,
+.booking-date,
+.booking-instructor {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.booking-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  min-width: 200px;
+}
+
+.booking-booking-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.booking-notes {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+  max-width: 300px;
+}
+
+.cancel-button {
+  padding: 0.75rem 1.5rem;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancel-button:hover {
+  background: #cc0000;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .my-bookings h1 {
+    font-size: 1.75rem;
+  }
+
+  .booking-card {
+    flex-direction: column;
+  }
+
+  .booking-meta {
+    align-items: flex-start;
+  }
+
+  .booking-notes {
+    text-align: left;
+  }
+
+  .cancel-button {
+    width: 100%;
+  }
+}
+

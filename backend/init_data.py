@@ -69,8 +69,7 @@ def init_sample_data():
                 max_participants=10,
                 duration_minutes=120,
                 price=50000,
-                image_url="https://plus.unsplash.com/premium_photo-1661380954234-13d98a83577c?auto=format&fit=crop&w=800&q=80
-",
+                image_url="https://plus.unsplash.com/premium_photo-1661380954234-13d98a83577c?auto=format&fit=crop&w=800&q=80",
                 activity_date=datetime.utcnow() + timedelta(days=7)
             ),
             Activity(
